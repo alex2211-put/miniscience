@@ -8,7 +8,7 @@ gmsh.initialize()
 # Let's merge an STL mesh that we would like to remesh (from the parent
 # directory):
 path = os.path.dirname(os.path.abspath(__file__))
-gmsh.merge(os.path.join(path, 'tor_2.stl'))
+gmsh.merge(os.path.join(path, 'tor_2.STL'))
 
 # We first classify ("color") the surfaces by splitting the original surface
 # along sharp geometrical features. This will create new discrete surfaces,
